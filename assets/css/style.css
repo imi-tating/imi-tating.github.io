@@ -17,7 +17,7 @@ body {
     color: #777;
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     background-color: #fff;
-    border: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     margin-bottom: 40px;
 }
 
@@ -25,6 +25,7 @@ body {
     width: 960px;
     height: 65px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 #me {
@@ -39,7 +40,7 @@ body {
 
 #menus {
     float: right;
-    margin-top: 20px;
+    margin-top: 22px;
 }
 
 a {
