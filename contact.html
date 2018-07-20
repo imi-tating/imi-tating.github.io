@@ -4,61 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <!--BootStrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!--CSS File Link-->
     <link rel="stylesheet" href="style.css">
-    <title>Ellie's Bootstrap - Contact Page</title>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!--Bootstrap JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!--Popper?-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <!--Javascript file link-->
+  <script type="text/javascript" src="app.js"></script>
+    <title>Ellie's Contact Meow</title>
 </head>
 <body>
-    <div class="navbar-expand{-sm|-md|-lg|-xl}">
-        <nav class="navbar">
-            <div id="menus" class="container">
-                <h1 id="me" class="navbar-brand">Ellie</h1>
-                <nav class="nav">
-                    <a class="nav-link" href="index.html">About</a>
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    <a id="contact" class="nav-link" href="contact.html">Contact</a>
-                </nav>
-            </div>
-        </nav>
+
+  <nav class="navbar navbar-dark bg-dark border-bottom border-light fixed-top">
+    <h1 id="title" class="text-white display-4">Ellie Cat</h1>
+    <div class="dropdown">
+      <i id="dropdownMenu" class=" dropdown-btn fas fa-fish fa-flip-horizontal text-muted" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu">
+        <a class="dropdown-item" href="index.html">Meow</a>
+        <a class="dropdown-item" href="games.html">Games</a>
+      </div>
     </div>
-    <main id="content" class="container">
-        <div id="main-body" class="container">
-                <div class="row">
-                    <div class="col">
-                        <h2>Contact</h2>
-                        <hr>
-                        <form>
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control form-control-sm" id="name" placeholder="">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Email</label>
-                                <input type="email" class="form-control form-control-sm" id="mail" placeholder="">
-                            </div>
-                            <div class="form-group">
-                                <label for="msg">Message</label>
-                                <textarea name="user_message" class="form-control form-control-sm" id="msg" placeholder="" style="height: 200px"></textarea>
-                            </div>
-                            <div>
-                                <button type="submit" class="btn btn-primary" style="background-color: #4aaaa5; border: none">Submit</button>
-                            </div>
-                        </form> 
-                    </div>
-                </div>
-            </div> 
-    </main>  
-    <footer class="footer">
-        <div class="container-fluid">
-            <div id="accent-footer" class="row">
-            </div>
-            <div id="main-footer" class="row">
-                <div class="col">
-                        Copyright ©
-                </div>  
-            </div>
+  </nav>
+
+  <div class="clear-fix"></div>
+  <div id="main-body" class="container bg-light">
+    <h3>Say Meow</h3>
+    <hr>
+    <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control form-control-sm" id="name" placeholder="">
         </div>
-    </footer>
-    
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control form-control-sm" id="mail" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="msg">Message</label>
+            <textarea name="user_message" class="form-control form-control-sm" id="msg" placeholder="" style="height: 200px"></textarea>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-large btn-secondary">Submit</button>
+        </div>
+    </form>
+  </div>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+      <form>
+          <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control form-control-sm" id="name" placeholder="">
+          </div>
+          <div class="form-group">
+              <label for="exampleInputEmail1">Email</label>
+              <input type="email" class="form-control form-control-sm" id="mail" placeholder="">
+          </div>
+          <div class="form-group">
+              <label for="msg">Message</label>
+              <textarea name="user_message" class="form-control form-control-sm" id="msg" placeholder="" style="height: 200px"></textarea>
+          </div>
+          <div>
+              <button type="submit" class="btn btn-primary" style="background-color: #4aaaa5; border: none">Submit</button>
+          </div>
+      </form>
+  </div>
+
+</html> -->
