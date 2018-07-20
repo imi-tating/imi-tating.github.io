@@ -1,4 +1,8 @@
 $(document).ready(function(){
-  $('.dropdown-toggle').dropdown();
+
+  $("#dropdownMenu").click(function() {
+    $('.dropdown-toggle').dropdown();
+  });
+
 
 });
